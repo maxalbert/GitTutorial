@@ -1,7 +1,7 @@
-all: nbconvert
+all: html
 
-nbconvert:
+html:
 	ipython nbconvert --to slides git_tutorial_slides.ipynb
 
-serve:
+serve: html
 	python -m SimpleHTTPServer 8000
